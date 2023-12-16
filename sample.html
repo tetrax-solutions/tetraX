@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    /* Media queries for different screen widths */
+@media (min-width: 1024px) {
+  .section-chapter-three {
+    padding: 0 4.875rem 9.375rem;
+  }
+
+  .section {
+    max-width: 100rem;
+    margin: 0 auto;
+  }
+
+  html {
+    font-size: -webkit-calc(10px + (16 - 10) * ((100vw - 1024px)/(1920 - 1024)));
+    font-size: -moz-calc(10px + (16 - 10) * ((100vw - 1024px)/(1920 - 1024)));
+    font-size: calc(10px + (16 - 10) * ((100vw - 1024px) / (1920 - 1024)));
+  }
+
+  .section-chapter-three:after {
+    right: 4.875rem;
+    left: 4.875rem;
+    height: 0.6875rem;
+  }
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+/* General CSS rules for all screens */
+html {
+  font-size: -webkit-calc(14px + (18 - 14) * ((100vw - 320px)/(414 - 320)));
+  font-size: -moz-calc(14px + (18 - 14) * ((100vw - 320px)/(414 - 320)));
+  font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (414 - 320)));
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -khtml-font-smoothing: antialiased;
+  -apple-font-smoothing: antialiased;
+  font-smooth: always;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #e6e2dd;
+  color: #303030;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+.section-chapter-three:after {
+  content: "";
+  position: absolute;
+  right: 0.75rem;
+  bottom: 0;
+  left: 0.75rem;
+  width: auto;
+  height: 0.3125rem;
+  margin: 0 auto;
+  background-color: #303030;
+}
+
+/* Resetting box-sizing and additional styling */
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:after, :before {
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+</style>
+</head>
+<body>
+    <section class="section section-chapter-three"><div class="section__name section-chapter-three__name">I.III - <span class="highlight">Our clients</span> Advertisement</div><div class="carousel-client"><ul class="carousel-client__feedback" style="width: 1018px;"><li class="carousel-client__feedback-item" data-client="oatly" style="width: 1018px; left: 0px; opacity: 1; visibility: inherit;"><div class="carousel-client__feedback-content"><div class="carousel-client__feedback-quote">"If I'm looking for <span class="highlight">that</span> reliable <span class="highlight">yet</span> creative collaboration, <span class="highlight">it's</span> always Dunderville."</div><div class="carousel-client__feedback-author">Tinny Ohlsson - Project manager. Oatly</div></div><div class="carousel-client__feedback-logo-container is-narrow"><img class="carousel-client__feedback-logo" src="assets/img/logo-oatly.png" alt="Oatly"></div></li><li class="carousel-client__feedback-item" data-client="brio" style="width: 1018px; left: 0px; opacity: 0; visibility: hidden;"><div class="carousel-client__feedback-content"><div class="carousel-client__feedback-quote">"<span class="highlight">They</span> have grown <span class="highlight">to be a</span> valuable partner <span class="highlight">to progress</span> Brio's cinematic development <span class="highlight">for the</span> past couple of years."</div><div class="carousel-client__feedback-author">&gt;Hendrik Zimmer - Global marketing manager. Brio</div></div><div class="carousel-client__feedback-logo-container is-narrow"><img class="carousel-client__feedback-logo" src="assets/img/logo-brio.png" alt="Brio"></div></li><li class="carousel-client__feedback-item" data-client="tetrapak" style="width: 1018px; left: 0px; opacity: 0; visibility: hidden;"><div class="carousel-client__feedback-content"><div class="carousel-client__feedback-quote">"They have <span class="highlight">the</span> ability <span class="highlight">to</span> translate <span class="highlight">our sometimes</span> complex messaging <span class="highlight">into</span> great content."</div><div class="carousel-client__feedback-author">Emma Brandgård - Global marketing communication manager. Tetra pak</div></div><div class="carousel-client__feedback-logo-container is-narrow"><img class="carousel-client__feedback-logo" src="assets/img/logo-tetrapak.png" alt="Tetra Pak"></div></li><li class="carousel-client__feedback-item" data-client="dackteam" style="width: 1018px; left: 0px; opacity: 0; visibility: hidden;"><div class="carousel-client__feedback-content"><div class="carousel-client__feedback-quote">"<span class="highlight">We have</span> worked with <span class="highlight">the guys</span> for <span class="highlight">the last</span> 5 years. <span class="highlight">We have</span> always enjoyed <span class="highlight">their</span> professional <span class="highlight">and</span> earnest demeanour."</div><div class="carousel-client__feedback-author">&gt;Mikael Johnsson - CEO. Däckteam</div></div><div class="carousel-client__feedback-logo-container is-narrow"><img class="carousel-client__feedback-logo" src="assets/img/logo-dackteam.png" alt="Däckteam"></div></li></ul><div class="carousel-client__progress is-wide"><svg class="carousel-client__progress-arrow" viewBox="0 0 29 25" style="transform: translateX(155.5px) rotate(180deg);"><path d="M14.487,25.013 L-0.012,0.006 L28.986,0.006 L14.487,25.013 Z"></path></svg></div><ul class="carousel-client__navigation"><li class="carousel-client__navigation-item" style="width: 254.5px; left: 0px;"><button class="button button-client is-active" data-client="oatly"><img class="button-client__logo is-wide ls-is-cached lazyloaded" data-src="assets/img/logo-oatly.png" alt="Oatly" src="assets/img/logo-oatly.png"></button></li><li class="carousel-client__navigation-item" style="width: 254.5px; left: 254.5px;"><button class="button button-client " data-client="brio"><img class="button-client__logo is-wide ls-is-cached lazyloaded" data-src="assets/img/logo-brio.png" alt="Brio" src="assets/img/logo-brio.png"></button></li><li class="carousel-client__navigation-item" style="width: 254.5px; left: 509px;"><button class="button button-client " data-client="tetrapak"><img class="button-client__logo is-wide ls-is-cached lazyloaded" data-src="assets/img/logo-tetrapak.png" alt="Tetra Pak" src="assets/img/logo-tetrapak.png"></button></li><li class="carousel-client__navigation-item" style="width: 254.5px; left: 763.5px;"><button class="button button-client " data-client="dackteam"><img class="button-client__logo is-wide ls-is-cached lazyloaded" data-src="assets/img/logo-dackteam.png" alt="Däckteam" src="assets/img/logo-dackteam.png"></button></li></ul></div></section>
+</body>
+</html>
